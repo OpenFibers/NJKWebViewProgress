@@ -19,6 +19,7 @@
 		26E5744A172235B500203262 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E57449172235B500203262 /* UIKit.framework */; };
 		26E5744C172235B500203262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E5744B172235B500203262 /* Foundation.framework */; };
 		26E5744E172235B500203262 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E5744D172235B500203262 /* CoreGraphics.framework */; };
+		421CA4D3174DECF50033278C /* NJKProgressWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 421CA4D2174DECF50033278C /* NJKProgressWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		26E57449172235B500203262 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26E5744B172235B500203262 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		26E5744D172235B500203262 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		421CA4D1174DECF50033278C /* NJKProgressWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKProgressWebView.h; sourceTree = SOURCE_ROOT; };
+		421CA4D2174DECF50033278C /* NJKProgressWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKProgressWebView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				2677297517245E7900D4E159 /* AppDelegate.m */,
 				2677297617245E7900D4E159 /* ViewController.h */,
 				2677297717245E7900D4E159 /* ViewController.m */,
+				421CA4D1174DECF50033278C /* NJKProgressWebView.h */,
+				421CA4D2174DECF50033278C /* NJKProgressWebView.m */,
 				2677297117245E5C00D4E159 /* NJKWebViewProgress.h */,
 				2677297217245E5C00D4E159 /* NJKWebViewProgress.m */,
 				26E57450172235B500203262 /* Supporting Files */,
@@ -192,6 +197,7 @@
 				2677297817245E7900D4E159 /* AppDelegate.m in Sources */,
 				2677297917245E7900D4E159 /* ViewController.m in Sources */,
 				2677298117245E8E00D4E159 /* main.m in Sources */,
+				421CA4D3174DECF50033278C /* NJKProgressWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

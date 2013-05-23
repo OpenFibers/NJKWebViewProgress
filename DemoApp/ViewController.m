@@ -7,30 +7,25 @@
 //
 
 #import "ViewController.h"
-#import "NJKWebViewProgress.h"
+#import "NJKProgressWebView.h"
 
-@interface ViewController ()<UIWebViewDelegate, NJKWebViewProgressDelegate>
+@interface ViewController ()<NJKProgressWebViewDelegate>
 @end
 
 @implementation ViewController
 {
     UIWebView *_webView;
     IBOutlet __weak UIProgressView *_progressView;
-    NJKWebViewProgress *_progressProxy;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    _webView = [[UIWebView alloc] initWithFrame:(CGRect){CGPointZero, self.view.frame.size}];
+    _webView = [[NJKProgressWebView alloc] initWithFrame:(CGRect){CGPointZero, self.view.frame.size}];
+    _webView.delegate = self;
     [self.view addSubview:_webView];
     
-    _progressProxy = [[NJKWebViewProgress alloc] init];
-    _webView.delegate = _progressProxy;
-    _progressProxy.webViewProxyDelegate = self;
-    _progressProxy.progressDelegate = self;
-
     [self loadGoogle];
 }
 
@@ -56,8 +51,8 @@
     [_webView loadRequest:req];
 }
 
-#pragma mark - NJKWebViewProgressDelegate
--(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
+#pragma mark - NJKProgressWebViewDelegate
+- (void)progressWebView:(NJKProgressWebView *)webView updateProgress:(float)progress
 {
     if (progress == 0.0) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
@@ -72,7 +67,7 @@
             _progressView.alpha = 0.0;
         } completion:nil];
     }
-        
+    
     [_progressView setProgress:progress animated:NO];
 }
 

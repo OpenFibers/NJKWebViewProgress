@@ -7,6 +7,10 @@
 
 #import "NJKWebViewProgress.h"
 
+#if !__has_feature(objc_arc)
+#error ARC is required
+#endif
+
 NSString *completeRPCURL = @"webviewprogressproxy:///complete";
 
 static const float initialProgressValue = 0.1;

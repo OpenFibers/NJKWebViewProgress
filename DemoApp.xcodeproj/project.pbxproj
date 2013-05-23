@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2677297317245E5C00D4E159 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677297217245E5C00D4E159 /* NJKWebViewProgress.m */; };
 		2677297817245E7900D4E159 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677297517245E7900D4E159 /* AppDelegate.m */; };
 		2677297917245E7900D4E159 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677297717245E7900D4E159 /* ViewController.m */; };
 		2677297E17245E8E00D4E159 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2677297A17245E8E00D4E159 /* Default-568h@2x.png */; };
@@ -19,12 +18,11 @@
 		26E5744A172235B500203262 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E57449172235B500203262 /* UIKit.framework */; };
 		26E5744C172235B500203262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E5744B172235B500203262 /* Foundation.framework */; };
 		26E5744E172235B500203262 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E5744D172235B500203262 /* CoreGraphics.framework */; };
-		421CA4D3174DECF50033278C /* NJKProgressWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 421CA4D2174DECF50033278C /* NJKProgressWebView.m */; };
+		421CA4D9174E05530033278C /* NJKProgressWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 421CA4D6174E05530033278C /* NJKProgressWebView.m */; };
+		421CA4DA174E05530033278C /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 421CA4D8174E05530033278C /* NJKWebViewProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2677297117245E5C00D4E159 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgress.h; path = NJKWebViewProgress/NJKWebViewProgress.h; sourceTree = SOURCE_ROOT; };
-		2677297217245E5C00D4E159 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgress.m; path = NJKWebViewProgress/NJKWebViewProgress.m; sourceTree = SOURCE_ROOT; };
 		2677297417245E7900D4E159 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DemoApp/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		2677297517245E7900D4E159 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DemoApp/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		2677297617245E7900D4E159 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = DemoApp/ViewController.h; sourceTree = SOURCE_ROOT; };
@@ -41,8 +39,10 @@
 		26E57449172235B500203262 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26E5744B172235B500203262 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		26E5744D172235B500203262 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		421CA4D1174DECF50033278C /* NJKProgressWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKProgressWebView.h; sourceTree = SOURCE_ROOT; };
-		421CA4D2174DECF50033278C /* NJKProgressWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKProgressWebView.m; sourceTree = SOURCE_ROOT; };
+		421CA4D5174E05530033278C /* NJKProgressWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKProgressWebView.h; sourceTree = "<group>"; };
+		421CA4D6174E05530033278C /* NJKProgressWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKProgressWebView.m; sourceTree = "<group>"; };
+		421CA4D7174E05530033278C /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		421CA4D8174E05530033278C /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				26E5744F172235B500203262 /* DemoApp */,
+				421CA4D4174E05530033278C /* NJKWebViewProgress */,
 				26E57448172235B500203262 /* Frameworks */,
 				26E57447172235B500203262 /* Products */,
 			);
@@ -103,10 +104,6 @@
 				2677297517245E7900D4E159 /* AppDelegate.m */,
 				2677297617245E7900D4E159 /* ViewController.h */,
 				2677297717245E7900D4E159 /* ViewController.m */,
-				421CA4D1174DECF50033278C /* NJKProgressWebView.h */,
-				421CA4D2174DECF50033278C /* NJKProgressWebView.m */,
-				2677297117245E5C00D4E159 /* NJKWebViewProgress.h */,
-				2677297217245E5C00D4E159 /* NJKWebViewProgress.m */,
 				26E57450172235B500203262 /* Supporting Files */,
 			);
 			name = DemoApp;
@@ -125,6 +122,17 @@
 				2677298217245E9800D4E159 /* DemoApp-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		421CA4D4174E05530033278C /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				421CA4D5174E05530033278C /* NJKProgressWebView.h */,
+				421CA4D6174E05530033278C /* NJKProgressWebView.m */,
+				421CA4D7174E05530033278C /* NJKWebViewProgress.h */,
+				421CA4D8174E05530033278C /* NJKWebViewProgress.m */,
+			);
+			path = NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,11 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2677297317245E5C00D4E159 /* NJKWebViewProgress.m in Sources */,
 				2677297817245E7900D4E159 /* AppDelegate.m in Sources */,
 				2677297917245E7900D4E159 /* ViewController.m in Sources */,
 				2677298117245E8E00D4E159 /* main.m in Sources */,
-				421CA4D3174DECF50033278C /* NJKProgressWebView.m in Sources */,
+				421CA4D9174E05530033278C /* NJKProgressWebView.m in Sources */,
+				421CA4DA174E05530033278C /* NJKWebViewProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

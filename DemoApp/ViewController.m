@@ -10,7 +10,7 @@
 
 @implementation ViewController
 {
-    IBOutlet __weak UIWebView *_webView;
+    UIWebView *_webView;
     IBOutlet __weak UIProgressView *_progressView;
     NJKWebViewProgress *_progressProxy;
 }
@@ -19,12 +19,21 @@
 {
     [super viewDidLoad];
     
+    _webView = [[UIWebView alloc] initWithFrame:(CGRect){CGPointZero, self.view.frame.size}];
+    [self.view addSubview:_webView];
+    
     _progressProxy = [[NJKWebViewProgress alloc] init];
     _webView.delegate = _progressProxy;
     _progressProxy.webViewProxyDelegate = self;
     _progressProxy.progressDelegate = self;
 
     [self loadGoogle];
+}
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    _webView.frame = (CGRect){CGPointZero, self.view.frame.size};
 }
 
 - (IBAction)searchButtonPushed:(id)sender
